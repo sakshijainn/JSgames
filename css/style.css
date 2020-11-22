@@ -1,0 +1,126 @@
+
+
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+
+
+body{
+   
+    background: #a5c6d9;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+}
+
+
+.heading
+{
+    height:150px;
+    width:100%;
+    background-color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.neon
+{
+    position: absolute;
+    top:10%;
+    left:40%;
+    margin: 0;
+    padding: 0 20px;
+    color:#fff;
+    text-shadow: 0 0 20px #ff005b;
+
+
+}
+
+.neon:after
+{
+    content : attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0 20px;
+    z-index: -1;
+    color:#ff005b;
+    filter:blur(15px);
+
+}
+
+.neon:before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:#fe3a80;
+    z-index:-2;
+    opacity:0.5;
+    filter: blur(40px);
+
+
+}
+
+.container
+{   margin:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.neu
+{
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+    background: #a5c6d9;
+    box-shadow:  20px 20px 60px #8ca8b8, 
+             -20px -20px 60px #bee4fa;
+    margin-left: 20px;
+}
+
+
+.gamelink
+{
+   
+    border: none;
+    color: black;
+    padding: 17px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+@media only screen and (min-width: 480px) {
+     
+
+    .gamelink
+    {
+        font-size: 15px;
+        padding:10px 15px;
+    }
+  }
+
+
+  @media only screen and (min-width: 600px) {
+    
+
+    .gamelink
+    {
+        font-size: 20px;
+        padding:17px 32px;
+    }
+  }
