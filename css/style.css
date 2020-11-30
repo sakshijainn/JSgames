@@ -10,7 +10,7 @@
 
 body{
    
-    background: #a5c6d9;
+   
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -18,109 +18,138 @@ body{
 }
 
 
-.heading
+header
 {
-    height:150px;
-    width:100%;
-    background-color: #000000;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-}
-
-.neon
-{
-    position: absolute;
-    top:10%;
-    left:40%;
-    margin: 0;
-    padding: 0 20px;
-    color:#fff;
-    text-shadow: 0 0 20px #ff005b;
-
-
-}
-
-.neon:after
-{
-    content : attr(data-text);
-    position: absolute;
-    top:0;
-    left:0;
-    padding:0 20px;
-    z-index: -1;
-    color:#ff005b;
-    filter:blur(15px);
-
-}
-
-.neon:before
-{
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
+    height: 50%;
+    background-color: #6D28D9;
     width: 100%;
-    height: 100%;
-    background:#fe3a80;
-    z-index:-2;
-    opacity:0.5;
-    filter: blur(40px);
-
-
+    padding:2rem;
+    border-bottom-left-radius: 1.4rem;
+   
 }
 
-.container
-{   margin:120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-}
-
-.neu
-{
-    height: 80px;
-    width: 200px;
-    border-radius: 25px;
-    background: #a5c6d9;
-    box-shadow:  20px 20px 60px #8ca8b8, 
-             -20px -20px 60px #bee4fa;
-    margin-left: 20px;
-}
-
-
-.gamelink
+.header h1
 {
    
-    border: none;
-    color: black;
-    padding: 17px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
+    color:white;
 }
 
 
-@media only screen and (min-width: 480px) {
-     
+.one
+{
+    padding:2rem;
+   
+}
 
-    .gamelink
-    {
-        font-size: 15px;
-        padding:10px 15px;
-    }
-  }
+.one .image 
+{
+    max-width: 400px;
+    display: block;
+   margin: auto;
+  
+   padding:2rem;
+}
+
+.one h2
+{
+    text-align: center;
+    font-size: 1.5rem;
+     color:#312E81;
+}
 
 
-  @media only screen and (min-width: 600px) {
+.button-container
+{
+    background-color: #A78BFA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: auto;
+
+}
+
+.box
+{
+    width:20%;
+    height:100px;
+    background: #FEF2F2;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+.box h3 a 
+{
+    list-style: none;
+    text-decoration: none;
+    color:black;
     
+}
 
-    .gamelink
+.box h3
+{
+   
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer
+{
+    padding-top: 1rem;
+    background-color:#FDF2F8;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer ul
+{
+    list-style: none;
+    
+}
+footer ul li
+{
+    display: inline;
+    
+    padding-right: 0.5rem;
+}
+
+footer ul li a 
+{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px)
+{
+    .box
     {
-        font-size: 20px;
-        padding:17px 32px;
+        width:40%;
     }
-  }
+}
+
+@media screen and (max-width:600px)
+{
+    .box
+    {
+        width:90%;
+    }
+}

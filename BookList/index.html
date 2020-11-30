@@ -3,109 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <title>BookList | JS </title>
-
-    <style>
-        body{
-        background: #c2e59c;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
-        }
-
-        button{
-            background-color: #e74c3c;
-            color:black;
-
-        }
-        .sucess,.error
-        {
-            color:white;
-            padding: 5px;
-            margin:5px 0 15px 0;
-        }
-
-        .success
-        {
-            background:green;
-
-        }
-
-        .error{
-            background:red;
-        }
-
-        .btn1
-        {
-            background:black;
-           
-            
-        }
-
-        .btn1 a
-        {
-            text-decoration:none;
-        }
-     
-
-    
-    </style>
+    <title>OOP BookList</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <div class="header">
+            <h1>Mini JS World</h1></div>
+    </header>
 
-    <div class="container">
-        <h1>Add Book</h1>
+    <section class="one">
+        <img class="image" src="https://image.freepik.com/free-vector/girl-writing-journal-diary_74855-7408.jpg" alt="">
+        <h2><strong>Book Library For You!  </strong></h2>
 
-        <form id="book-form">
-            <div>
-                <label for="title">Title</label>
-                <input type="text" id="title" class="u-full-width">
-            </div>
+    </section>
 
+    <section class="two">
+        <div class="container">
+            <h1 class="title">Add Book</h1>
+    
+            <form id="book-form">
+                <div>
+                    <label style="color:#111827; font-weight: bold; font-size: 1.5rem;" for="title">Title</label>
+                    <input type="text" id="title" class="u-full-width">
+                </div>
+    
+    
+                <div>
+                    <label style="color:#111827; font-weight: bold; font-size: 1.5rem"; for="title">Author</label>
+                    <input type="text" id="author" class="u-full-width">
+                </div>
+    
+    
+                <div>
+                    <label style="color:#111827; font-weight: bold; font-size: 1.5rem"; for="title">ISBN#</label>
+                    <input type="text" id="isbn" class="u-full-width">
+                </div>
+                <div> 
+                   <button id="btnn" type="button submit" class="u-full-width" >Submit</button>  
+                </div>
+    
+                
+    
+                <hr>
+                <table class="u-full-width">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+    
+    
+                    <tbody style="color:#1D4ED8; font-weight: bold; font-size: 1.3rem;" id="book-list">
+    
+                    </tbody>
+                 
+                </table >
+    
+            </form>
+           
+        </div>
+        </section>
 
-            <div>
-                <label for="title">Author</label>
-                <input type="text" id="author" class="u-full-width">
-            </div>
+        <section class="three">
+            <div id="info">
+                <button id="btnn" class="btn1  u-full-width">  <a href=
+                  "https://medium.com/@sakshijjain1997/oops-book-list-project-using-prototype-in-js-74b6e7b9f3a2" target="_blank">  <h5>Understand the Code</h5> </a>
+              </button>
+              </div>
+        </section>
+        <!-- <script src="app.js"></script> -->
+        <script src="appes6.js"></script>
+       
 
+        <footer>
+            <ul>
+                <li><a style="color: #E1306C;" href="https://www.instagram.com/sakshicodrops/" target="_blank">Instagram</a></li>
+                <li><a style="color: #333;" href="https://github.com/sakshijainn" target="_blank">Github</a></li>
+                <li><a style="color:#2867B2;"href="https://www.linkedin.com/in/sakshi-jain-0ba96317a/" target="_blank">Linkedin</a></li>
+                <li><a style="color:#00ab6c;"href="https://sakshijjain1997.medium.com/"target="_blank">Medium</a></li>
+                <li><a style="color:#a62100;"href="https://www.quora.com/profile/Sakshi-132" target="_blank">Quora</li>
+                   
+    
+            </ul>
+        </footer>
 
-            <div>
-                <label for="title">ISBN#</label>
-                <input type="text" id="isbn" class="u-full-width">
-            </div>
-            <div>
-               <button type="button submit" class="u-full-width" >Submit</button>  
-            </div>
-
-            
-
-            <hr>
-            <table class="u-full-width">
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN</th>
-                    <th></th>
-                </tr>
-                </thead>
-
-
-                <tbody id="book-list">
-
-                </tbody>
-             
-            </table >
-
-        </form>
-        <div id="info">
-            <button class="btn1  u-full-width">  <a href=
-              "https://medium.com/@sakshijjain1997/oops-book-list-project-using-prototype-in-js-74b6e7b9f3a2" target="_blank">  <h5>Understand the Code!</h5> </a>
-          </button>
-          </div>
-    </div>
-    <!-- <script src="app.js"></script> -->
-    <script src="appes6.js"></script>
-</body>
-</html>
+        <script src="app.js"></script>
+   </body>
+   </html>
