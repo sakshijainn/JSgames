@@ -28,6 +28,7 @@ header
     width: 100%;
     padding:2rem;
     border-bottom-left-radius: 1.4rem;
+    width:100%;
    
 }
 
@@ -64,7 +65,7 @@ header
 .one h2
 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
      color:#312E81;
 }
 
@@ -74,10 +75,11 @@ header
     background-color: #A78BFA;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width:100%;
-    height: auto;
+    min-width:100%;
+    min-height: 100%;
+    padding: 2rem;
 
 }
 
@@ -155,18 +157,25 @@ footer ul li a
 
 
 
-@media screen and (max-width:1200px)
+
+@media screen and (max-width:568px) 
 {
-    .box
+    header 
     {
-        width:40%;
+        background-color: rebeccapurple;
+        min-width: 100%;
+    }
+    .button-container{
+        min-width: 100%;
+        padding: 1rem;
+    }
+
+    .box 
+    {
+        width: 60%;
+        margin: 10px;
     }
 }
 
-@media screen and (max-width:600px)
-{
-    .box
-    {
-        width:90%;
-    }
-}
+
+
