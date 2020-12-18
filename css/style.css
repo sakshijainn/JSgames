@@ -173,8 +173,9 @@ footer ul li a
         min-width: 100%;
     }
     .button-container{
-        max-width: 100% !important;
-        overflow-x: hidden !important;
+        max-width: 100%;
+        padding: 1rem;
+        overflow-x: hidden;
     }
 
     .box 
