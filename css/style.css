@@ -15,7 +15,7 @@ body{
     padding: 0;
     background-size: cover;
     position: absolute;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   
 
 }
@@ -77,22 +77,25 @@ header
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-width:100%;
-    min-height: 100%;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     padding: 2rem;
     overflow-x: hidden;
+   
 
 }
 
 .box
 {
-    width:20%;
+    
     height:100px;
+  
     background: #FEF2F2;
-    margin: 20px;
+    margin: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
+    padding: 1rem;
 
 
 }
@@ -161,15 +164,17 @@ footer ul li a
 
 @media screen and (max-width:568px) 
 {
+    body {
+        overflow-x: hidden !important;
+    }
     header 
     {
         background-color: rebeccapurple;
         min-width: 100%;
     }
     .button-container{
-        min-width: 100%;
-        padding: 1rem;
-        overflow-x: hidden;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
     }
 
     .box 
